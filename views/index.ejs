@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Table - by David Straub</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.1.custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <noscript>
+        This application requires JavaScript to run. Please enable JavaScript in your browser settings and refresh the page.
+    </noscript>
+    <div id="container">
+    </div>
+
+    <script>
+        var app = app || {};
+        app.version = "<%- version %>";
+        app.env = "<%- env %>";
+    </script>
+    
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="/js/jquery-ui-1.9.1.custom.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/underscore.js"></script>
+    <script src="/js/backbone.js"></script>
+    <script src="/js/handlebars.js"></script>
+    
+    <script src="/js/metamorph.js"></script>
+    <script src="/js/store.js"></script>
+    <script src="/js/postal.js"></script>
+    <script src="/js/Backbone.ModelBinder.js"></script>
+    <script src="/js/backbone.layoutmanager.js"></script>
+
+    <script src="/js/jquery.gritter.js"></script>
+	
+    <script src="/js/bootstrap.js"></script>
+    
+    <script src="/js/table.js"></script>
+</body>
+</html>

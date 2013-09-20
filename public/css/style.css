@@ -1,0 +1,281 @@
+body {
+    padding: 15px;
+    background: #000 url('../images/subtle_carbon.png');
+}
+
+noscript {
+    color: white;
+}
+
+.table {
+    background: #378766;
+    
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    min-height: 200px;
+
+    position: relative;
+}
+    .table .above {
+        border-bottom: 1px dotted black;
+        padding-bottom: 1em;
+        overflow: hidden;
+    }
+        .table .decks {
+            margin-bottom: 0;
+            width: 20%;
+            float: left;
+        }
+        .table .players {
+            margin-bottom: 0;
+            width: 20%;
+            float: left;
+        }
+            .table .players .player {
+                clear: both;
+            }
+            .table .players .player-hand {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+                .table .players .player-hand .card.mini-card {
+                    float: left;
+
+                    position: static;
+
+                    cursor: inherit;
+
+                    width: 20px;
+                    height: 20px;
+
+                    margin: 0 3px;
+                }
+
+    .table > .cards {
+        position: relative;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        /*min-height: 180px;*/
+    }
+        .card {
+            background: white;
+            -webkit-box-shadow:  2px 2px 0 0 rgba(0,0,0,0.2);
+            -moz-box-shadow:  2px 2px 0 0 rgba(0,0,0,0.2);
+            box-shadow:  2px 2px 0 0 rgba(0,0,0,0.2);
+
+            border: 1px solid #444;
+            border-radius: 4px;
+
+            cursor: pointer;
+
+            display: block;
+            width: 3%;
+            text-align: center;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+            .table > .cards .card {
+                position: absolute;
+            }
+
+            .card.back {
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARElEQVQYV52P0Q4AIARFr///aKnRYqjlxdhxQAwwAWQZRQgjpMIVNPvbdIOX0aKCte8XRthqZ4zmcygFswf/jU83dl8PKZckB8rXMhgAAAAASUVORK5CYII=);
+            }
+
+            .card.red {
+                color: red;
+            }
+            .card.black {
+                color: black;
+            }
+                .card .face {
+                    position: relative;
+                }
+                    .card .suit {
+                        position: absolute;
+                        top: 50%;
+                        width: 100%;
+                        height: 0.65em;
+                        line-height: 0.65em;
+                        text-align: center;
+                    }
+                    .card .rank {
+                        position: absolute;
+                        top: 50%;
+                        width: 100%;
+                        height: 1em;
+                        line-height: 1em;
+                        text-align: center;
+                    }
+                        .card.red .rank {
+                            color: black;
+                        }
+                        .card.black .rank {
+                            color: red;
+                        }
+
+    .table .hand {
+        border-top: 1px dotted black;
+        padding-top: 1em;
+        overflow: auto;
+    }
+        .table .hand .cards {
+            margin: 0;
+            list-style-type: none;
+        }
+            .table .hand .cards li {
+                display: block;
+                width: 3%;
+                float: left;
+                margin: 0 0.2%;
+            }
+
+    .table .player-icon {
+        position: absolute;
+        color: red;
+        background: black;
+        padding: 2px;
+        border-radius: 4px;
+    }
+
+.header {
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+}
+    h1 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 5em;
+        margin: 0.125em 0 0 0;
+        width: 3em;
+        float: left;
+    }
+    .app-meta {
+        color: #ddd;
+        position: absolute;
+        top: 4.5em;
+        left: 14em;
+    }
+
+a {
+    color: #00B7FF;
+}
+
+.footer {
+    color: #fff;
+}
+
+.ui-autocomplete {
+    background: #fff;
+}
+
+/* the norm */
+#gritter-notice-wrapper {
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:301px;
+    z-index:9999;
+}
+#gritter-notice-wrapper.top-left {
+    left: 20px;
+    right: auto;
+}
+#gritter-notice-wrapper.bottom-right {
+    top: auto;
+    left: auto;
+    bottom: 20px;
+    right: 20px;
+}
+#gritter-notice-wrapper.bottom-left {
+    top: auto;
+    right: auto;
+    bottom: 20px;
+    left: 20px;
+}
+.gritter-item-wrapper {
+    position:relative;
+    margin:0 0 10px 0;
+    background:url('../images/ie-spacer.gif'); /* ie7/8 fix */ 
+}
+.gritter-top {
+    background:url(../images/gritter.png) no-repeat left -30px;
+    height:10px;
+}
+.hover .gritter-top {
+    background-position:right -30px;
+}
+.gritter-bottom {
+    background:url(../images/gritter.png) no-repeat left bottom;
+    height:8px;
+    margin:0;
+}
+.hover .gritter-bottom {
+    background-position: bottom right;
+}
+.gritter-item {
+    display:block;
+    background:url(../images/gritter.png) no-repeat left -40px;
+    color:#eee;
+    padding:2px 11px 8px 11px;
+    font-size: 11px;
+    font-family:verdana;
+}
+.hover .gritter-item {
+    background-position:right -40px;
+}
+.gritter-item p {
+    padding:0;
+    margin:0;
+    word-wrap:break-word;
+}
+.gritter-close {
+    display:none;
+    position:absolute;
+    top:5px;
+    left:3px;
+    background:url(../images/gritter.png) no-repeat left top;
+    cursor:pointer;
+    width:30px;
+    height:30px;
+}
+.gritter-title {
+    font-size:14px;
+    font-weight:bold;
+    padding:0 0 7px 0;
+    display:block;
+    text-shadow:1px 1px 0 #000; /* Not supported by IE :( */
+}
+.gritter-image {
+    width:48px;
+    height:48px;
+    float:left;
+}
+.gritter-with-image,
+.gritter-without-image {
+    padding:0;
+}
+.gritter-with-image {
+    width:220px;
+    float:right;
+}
+/* for the light (white) version of the gritter notice */
+.gritter-light .gritter-item,
+.gritter-light .gritter-bottom,
+.gritter-light .gritter-top,
+.gritter-light .gritter-close {
+    background-image: url(../images/gritter-light.png);
+    color: #222;
+}
+.gritter-light .gritter-title {
+    text-shadow: none;
+}

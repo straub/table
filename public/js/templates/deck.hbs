@@ -1,0 +1,13 @@
+Deck {{index}}; Cards: {{length}}
+{{#if length}}
+<div class="btn-group">
+  <button class="btn draw">Draw</button>
+  <button class="btn dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#" class="draw">To The Table</a></li>
+    <li><a href="#" class="draw-to-hand">To Your Hand</a></li>
+  </ul>
+</div>
+{{/if}}
