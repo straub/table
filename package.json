@@ -10,7 +10,7 @@
     "winston": "0.6.x",
     "async": "0.1.x",
     "mongoose": "3.3",
-    "deferred": "0.6.x",
+    "deferred": "0.7.11",
     "q": "0.8.x",
     "when": "1.6.x"
   }
